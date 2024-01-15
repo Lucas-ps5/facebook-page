@@ -1,0 +1,333 @@
+:root{
+    --bg-color-1: #f2f3f5;
+    --bg-color-2: #ffffff; 
+    --shadow-color: rgb(194, 192, 192);
+    --blue: rgb(48, 130, 236);
+    --text-color-1: rgb(48, 48, 49);
+}
+
+body{
+    background-color: var(--bg-color-1);
+    max-width: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*========================= Header ==============================*/
+
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: medium
+}
+
+.back-button-area, .back-action-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.context-area{
+    margin-left: 40px;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+.back-action-area{
+    margin-right: 55px;
+    padding: 10px 0px;
+}
+
+.action-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.back-button-area button, .back-button-area p{
+    color: var(--text-color-1);
+    margin: 0px 15px;
+}
+
+.back-button-area button{
+    height: 60%;
+    width: 50px;
+    box-shadow: 0px 2px 2px 1px var(--shadow-color);
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 7px;
+    margin: 10px 0;
+    font-size: medium;
+    background-color: var(--bg-color-2);
+}
+
+.back-icon-area{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-button-area p{
+    padding: 15px 0px;
+}
+
+
+
+/*=============================================== container =====================*/
+
+
+.container{
+    border-top: 8px solid var(--blue);
+    width: 99%;
+    margin: auto;
+    border-radius: 9px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 0px 1px 1px rgb(226, 226, 226);
+}
+
+.facebook-img{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.history-area{
+    width: 20%;
+    background-color: var(--bg-color-2);
+    padding-top: 10px;
+}
+
+.messages{
+    width: 57%;
+    background-color: var(--bg-color-1);
+    padding-top: 15px;
+}
+
+.profile-control-area{
+    width: 23%;
+    background-color: var(--bg-color-2);
+}
+
+.history-area, .messages, .profile-control-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.history-area-item{
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 10px;
+    border-radius: 7px;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.history-area-item.active-item{
+    background-color: var(--bg-color-1);
+}
+
+.message-item{
+   width: 95%;
+   margin: 8px auto;
+}
+
+.message-item-header, .additionnal-details, .message-account-info, .profile-info{
+    display: flex;
+    flex-direction: row;
+}
+.pp-img-message{
+    background-color: rgb(149, 149, 150);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 13px;
+}
+
+.facebook-img, .profile-name{
+    padding: 0px;
+}
+
+.profile-info{
+    padding: 10px 0 0 0;
+}
+
+.profile-name.profile-message-name{
+    margin: 5px 0px 5px 10px;
+}
+
+.additionnal-details{
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 20px;
+}
+
+.profile-type-content{
+    background: rgb(214, 214, 214);
+    padding: 0px 10px;
+    border-radius: 20px;
+    margin-top: 15px;
+    color: var(--text-color-1);
+}
+
+.message-date-area{
+    padding-top: 25px;
+}
+
+.message-item-header{
+    background: var(--bg-color-2);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 2px 0px 1px 1px rgb(236, 236, 236);
+    margin-bottom: 0px;
+}
+
+.message-content-area{
+    background: var(--bg-color-2);
+    margin-top: 3px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.message-text{
+    margin: auto;
+    padding: 15px 20px ;
+    font-size: large;
+}
+
+.message-text-area{
+    padding-left: 6%;
+}
+
+.mentions{
+    font-size: small;
+}
+
+.message-item-action-area{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.message-action-icon{
+    margin: 2%;
+}
+
+/* ======================================================= */
+.blue-background{
+    width: 90%;
+    height: 50%;
+    background-color: var(--blue);
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.profile-control{
+    position: relative;
+    margin-bottom: 0px;
+    background-color: var(--bg-color-2);
+    padding-top: 20px;
+}
+
+.profile-control-area-img{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(149, 149, 150);
+    position: absolute;
+    left: 37%;
+    bottom: 25%;
+    border-radius: 50%;
+    border: 2px solid var(--bg-color-2);
+}
+
+.profile-action-bloc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px 0 26px;
+    align-items: center;
+}
+
+.profile-control-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    font-size: large;
+}
+
+.profile-control-name-text{
+    margin-bottom: 0px;
+}
+
+.profile-control-name span{
+    margin-top: 5px;
+}
+
+.profile-control-edit{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-right: 7%;
+    margin-top: 3px;
+    border-top: 3px solid var(--bg-color-1);
+}
+
+.action-edit{
+    color: var(--blue);
+}
+
+.profile-action-bloc, .blue-parent, .profile-control-name, .profile-control-edit, .add-note-area{
+    background-color: var(--bg-color-2);
+}
+
+.add-note-area{
+    position: absolute;
+    width: 330px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    top: 248px;
+    right: 160px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.indications, form{
+    width: 80%;
+}
+
+.indication-title{
+    font-size: large;
+}
+
+#save-button{
+    width: 100%;
+    height: 40px;
+    font-size: large;
+    margin-bottom: 40px;
+    color: var(--bg-color-2);
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 6px;
+}
+
+textarea{
+    width: 97%;
+    height: 120px;
+    border-radius: 10px;
+    border: 1px solid rgb(128, 175, 247);
+    box-shadow: 0 0 2px 2px rgb(128, 175, 247);
+    font-size: large;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+
+
