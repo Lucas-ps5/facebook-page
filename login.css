@@ -1,0 +1,173 @@
+:root{
+    --bg-color-1: #f2f3f5;
+    --bg-color-2: #ffffff; 
+    --shadow-color: rgb(194, 192, 192);
+    --blue: rgb(48, 130, 236);
+    --text-color-1: rgb(48, 48, 49);
+}
+
+body{
+    font-family: Geneva, Tahoma, sans-serif, Verdana;
+    width: 100%;
+    margin: 0;
+    background: var(--bg-color-1);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    padding: auto;
+    width: 100%;
+}
+
+.site-name{
+    padding: 5%;
+}
+
+h1{
+    color: var(--blue);
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: var(--bg-color-2);
+    margin: 30px 2%;
+    padding: 7% 3%;
+    border-radius: 5px;
+    box-shadow: 0px 4px 7px var(--shadow-color);
+}
+
+input, button{
+    border-radius: 5px;
+    border: 1px solid var(--shadow-color);
+    height: 40px;
+    font-size: large;
+    outline: none;
+}
+
+.submit{
+    font-weight: bold;
+    font-size: x-large;
+    background: var(--blue);
+    color: var(--bg-color-2);
+    border-color: var(--blue);
+}
+
+form a{
+    text-align: center;
+    text-decoration: none;
+    color: var(--blue);
+    font-size: small;
+}
+
+.form-div{
+    width: 100%;
+}
+
+.separator{
+    border-top: 1px solid var(--shadow-color);
+    width: 100%;
+    margin: 3px 0 10px 0;
+}
+
+button a{
+    color: var(--bg-color-2);
+    font-size: large;
+    font-weight: bold;
+}
+
+.email-phone, .password{
+    padding: 0 15px;
+}
+
+button{
+    margin-bottom: 15px;
+    background: rgb(52, 173, 52);
+}
+
+@media  screen and (min-width: 768px){
+    .container{
+        width: 90%;
+        margin: 10% auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        text-align: start;
+    }
+
+    .site-name{
+        font-size: 1.5em;
+        width: 50%;
+        padding: 0 0 0 60px;
+    }
+    .form-div{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 80%;
+        margin: 10% auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .site-name{
+        font-size: 2em;
+        width: 50%;
+        padding: 0 0 0 60px;
+    }
+    .form-div{
+        width: 50%;
+    }
+    h1{
+        text-align: start;
+        margin: 5px 0;
+    }
+    
+    p{
+        margin: 20px 0;
+    }
+
+    form{
+        width: 75%;
+        margin: auto;
+        gap: 15px;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 7px var(--shadow-color);
+    }
+
+    input, button{
+        height: 62px;
+    }
+
+    button{
+        width: 50%;
+        margin: auto;
+    }
+
+    form a{
+        font-size: medium;
+    }
+
+    .separator{
+        margin: 10px 0 20px 0;
+    }
+
+    button a{
+        font-size: large;
+    }
+}
